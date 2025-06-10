@@ -17,6 +17,50 @@
 
 <body>
 
+  <div class="pop_up js_pop_c">
+    <div class="pop_up_connection js_pop_box_c">
+      <div class="pop_up_connection_tittle">
+        ОБРАТНАЯ СВЯЗЬ
+      </div>
+      <form action="#">
+        <input type="text" placeholder="Ваше Имя" required class="pop_up_input">
+        <input type="tel" placeholder="+7 900 000 000" required class="pop_up_input">
+        <input type="email" placeholder="E-mail" required class="pop_up_input">
+        <input type="text" placeholder="Город" required class="pop_up_input">
+        <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#"> персональных данных</a>.</p>
+        <input type="submit" value="ОТПРАВИТЬ" class="btn pop_up_btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="pop_up js_pop_o">
+    <div class="pop_up_connection js_pop_box_o">
+      <div class="pop_up_connection_tittle">
+        ЗАКАЗ УСЛУГИ
+      </div>
+      <form action="#">
+        <input type="text" placeholder="Название услуги" required class="pop_up_input">
+        <input type="text" placeholder="Ваше Имя" required class="pop_up_input">
+        <input type="tel" placeholder="+7 900 000 000" required class="pop_up_input">
+        <input type="email" placeholder="E-mail" required class="pop_up_input">
+        <input type="text" placeholder="Город" required class="pop_up_input">
+        <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#"> персональных данных</a>.</p>
+        <input type="submit" value="ОТПРАВИТЬ" class="btn pop_up_btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="menu js_menu">
+    <div class="menu_close js_menu_close"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.60813 6.60732L18.3932 18.3924M18.3932 6.60732L6.60813 18.3924" stroke="#666666"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <a href='#' class="menu_item">Модульные дома для бизнеса</a>
+    <a href="#" class="menu_item">Производство модульных домов</a>
+  </div>
+
   <header>
     <div class="container">
       <a href="#" class="header_logo">
@@ -40,11 +84,13 @@
           <a href="#"><img src="./img/icon/whatsapp.svg" alt="icon"></a>
         </div>
       </div>
-      <div class="header_btn">Оставить заявку</div>
-      <div class="header_burger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="header_right">
+        <div class="header_btn js_btn_c">Оставить заявку</div>
+        <div class="header_burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
@@ -56,7 +102,7 @@
           <h3>Строим модульные дома<br>
             под ключ за 14 дней<br>
             Работаем с ЭСКРОУ</h3>
-          <div class="main_slider_item_btn">
+          <div class="main_slider_item_btn js_btn_o">
             РАССЧИТАТЬ СТОИМОСТЬ
           </div>
           <img src="./img/img/slider/1.png" alt="img">
@@ -65,7 +111,7 @@
           <h3>Строим модульные дома<br>
             под ключ за 14 дней<br>
             Работаем с ЭСКРОУ</h3>
-          <div class="main_slider_item_btn">
+          <div class="main_slider_item_btn js_btn_o">
             РАССЧИТАТЬ СТОИМОСТЬ
           </div>
           <img src="./img/img/slider/1.png" alt="img">
@@ -74,7 +120,7 @@
           <h3>Строим модульные дома<br>
             под ключ за 14 дней<br>
             Работаем с ЭСКРОУ</h3>
-          <div class="main_slider_item_btn">
+          <div class="main_slider_item_btn js_btn_o">
             РАССЧИТАТЬ СТОИМОСТЬ
           </div>
           <img src="./img/img/slider/1.png" alt="img">
@@ -82,19 +128,19 @@
       </div>
       <div class="main_link">
         <div class="main_link_box">
-          <a href="#" class="main_link_box_item active">
+          <a href="#projects" class="main_link_box_item active">
             Проекты<br>
             модульных домов
           </a>
-          <a href="#" class="main_link_box_item">
+          <a href="#services" class="main_link_box_item">
             Интерьерные решения<br>
             в проектах домов
           </a>
-          <a href="#" class="main_link_box_item">
+          <a href="#uniqueness" class="main_link_box_item">
             Кейсы домов<br>
             наших клиентов
           </a>
-          <a href="#" class="main_link_box_item">
+          <a href="#reviews" class="main_link_box_item">
             Отзывы<br>
             наших клиентов
           </a>
@@ -107,7 +153,7 @@
     </div>
   </main>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container">
       <h2>ПРОЕКТЫ <b>МОДУЛЬНЫХ</b> ДОМОВ</h2>
       <div class="projects_filter">
@@ -157,7 +203,7 @@
               тепло зимой. Мы ведем полный цикл, от проектирования и производства, до внутренней и внешней отделки дома.
               Нами реализовано уже более 1500 домов, гостиниц и административных зданий </p>
           </div>
-          <div class="about_box_left_btn">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</div>
+          <div class="about_box_left_btn js_btn_c">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</div>
         </div>
         <div class="about_box_right">
           <img src="./img/img/projects/3.png" alt="img">
@@ -166,7 +212,7 @@
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h2>УСЛУГИ <b>КОМПАНИИ</b></h2>
       <div class="services_box">
@@ -200,6 +246,90 @@
 
   <section class="franchise">
     <div class="container">
+      <div class="franchise_mobile">
+        <h2>ПАРТНЕРСТВО
+          <b>ИЛИ</b> ФРАНШИЗА
+        </h2>
+        <div class="franchise_slider">
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              499 000 РУБ
+            </div>
+            <span>01</span>
+            <p>Небольшой первоначальный взнос</p>
+          </div>
+
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              1 590 000 РУБ
+            </div>
+            <span>02</span>
+            <p>Высокий средний чек</p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              350 000 РУБ
+            </div>
+            <span>03</span>
+            <p>Высокая моржа продажи</p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              А ЕЩЕ
+            </div>
+            <span>04</span>
+            <p>Быстрая окупаемость
+              с одной или двух продаж</p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              РИСКИ
+            </div>
+            <span>05</span>
+            <p>Минимальные риски
+              Не нужен большой штат</p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              РЕКЛАМА
+            </div>
+            <span>06</span>
+            <p>Проверенные каналы
+              по привлечению клиентов </p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              ПОМОЩЬ
+            </div>
+            <span>07</span>
+            <p>Помощь в продажах</p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              НАВЫКИ
+            </div>
+            <span>08</span>
+            <p>Не требует специальных навыков
+              или образования для управления</p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              ОШИБКИ
+            </div>
+            <span>09</span>
+            <p>Минимальный риск ошибки
+              при строительстве</p>
+          </div>
+          <div class="franchise_box_item">
+            <div class="franchise_box_item_prise">
+              ПОДРОБНЕЕ
+            </div>
+            <span>0</span>
+            <p>Франшизе - узнать здесь</p>
+          </div>
+        </div>
+      </div>
+
       <div class="franchise_box">
         <div class="franchise_box_item">
           <div class="franchise_box_item_prise">
@@ -522,11 +652,31 @@
     </div>
   </section>
 
-  <section class="uniqueness">
+  <section class="uniqueness" id="uniqueness">
     <div class="container">
       <h2>УНИКАЛЬНОСТЬ<br>
         <b>НАШИХ ДОМОВ</b>
       </h2>
+      <div class="uniqueness_box_mobile">
+        <div class="uniqueness_box_item">
+          <div class="uniqueness_box_item_icon">
+            <img src="./img/icon/icon_house.svg" alt="icon">
+          </div>
+          <div class="uniqueness_box_item_tittle">
+            <span>НАЗВАНИЕ ПРОЕКТА БУДЕТ ЗДЕСЬ</span>
+          </div>
+          <img src="./img/img/projects/1.png" alt="img">
+        </div>
+        <div class="uniqueness_box_item">
+          <div class="uniqueness_box_item_icon">
+            <img src="./img/icon/icon_house.svg" alt="icon">
+          </div>
+          <div class="uniqueness_box_item_tittle">
+            <span>НАЗВАНИЕ ПРОЕКТА БУДЕТ ЗДЕСЬ</span>
+          </div>
+          <img src="./img/img/projects/1.png" alt="img">
+        </div>
+      </div>
       <div class="uniqueness_box">
         <div class="uniqueness_box_item">
           <div class="uniqueness_box_item_icon">
@@ -686,7 +836,7 @@
     </div>
   </div>
 
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="container">
       <div class="reviews_slider">
         <div class="reviews_slider_item">
@@ -775,39 +925,73 @@
 
   <footer>
     <div class="container">
-      <div class="footer_item">
-        <a href="#" class="footer_item_logo"><img src="./img/icon/logo.svg" alt="img"></a>
-        <p>Строительная компания - строительство модульных домов под ключ</p>
-        <div class="footer_item_btn">НАШИ ОФИСЫ В РОССИИ</div>
-      </div>
-      <div class="footer_item">
-        <span>МЕНЮ</span>
-        <a href="#" class="footer_item_link">Проекты модульных домов</a>
-        <a href="#" class="footer_item_link">Модульные дома для бизнеса</a>
-        <a href="#" class="footer_item_link">Производство модульных домов</a>
-        <a href="#" class="footer_item_link">Сопутствующая документация</a>
-        <a href="#" class="footer_item_link">Пользовательское соглашение</a>
-        <a href="#" class="footer_item_link">Услуги</a>
-        <a href="#" class="footer_item_link">Контакты</a>
-      </div>
-      <div class="footer_item">
-        <span>СВЯЗАТЬСЯ С НАМИ</span>
-        <a href="tell:84950854565" class="footer_item_call">8 (495) 085-45-65</a>
-        <p>г. Москва<br>
-          ул. Смольная, 24а, офис 917</p>
-        <a href="mailto:sale@virmak.msk.ru" class="footer_item_email">sale@virmak.msk.ru</a>
-        <div class="footer_item_btn">ОСТАВИТЬ ЗАЯВКУ</div>
-      </div>
-      <div class="footer_item">
-        <span>ВРЕМЯ РАБОТЫ</span>
-        <p>с 9:00 до 20:00<br>
-          пн-пт. </p>
-        <div class="footer_item_network">
+      <div class="footer_box js_footer_wrap">
+        <div class="footer_item">
+          <a href="#" class="footer_item_logo"><img src="./img/icon/logo.svg" alt="img"></a>
+          <p>Строительная компания - строительство модульных домов под ключ</p>
+          <div class="footer_item_btn js_footer_btn">НАШИ ОФИСЫ В РОССИИ</div>
+        </div>
+        <div class="footer_item">
+          <span>МЕНЮ</span>
+          <a href="#" class="footer_item_link">Проекты модульных домов</a>
+          <a href="#" class="footer_item_link">Модульные дома для бизнеса</a>
+          <a href="#" class="footer_item_link">Производство модульных домов</a>
+          <a href="#" class="footer_item_link">Сопутствующая документация</a>
+          <a href="#" class="footer_item_link">Пользовательское соглашение</a>
+          <a href="#" class="footer_item_link">Услуги</a>
+          <a href="#" class="footer_item_link">Контакты</a>
+        </div>
+        <div class="footer_item">
+          <span>СВЯЗАТЬСЯ С НАМИ</span>
+          <a href="tell:84950854565" class="footer_item_call">8 (495) 085-45-65</a>
+          <p>г. Москва<br>
+            ул. Смольная, 24а, офис 917</p>
+          <a href="mailto:sale@virmak.msk.ru" class="footer_item_email">sale@virmak.msk.ru</a>
+          <div class="footer_item_btn js_btn_c">ОСТАВИТЬ ЗАЯВКУ</div>
+        </div>
+        <div class="footer_item">
+          <span>ВРЕМЯ РАБОТЫ</span>
+          <p>с 9:00 до 20:00<br>
+            пн-пт. </p>
+          <div class="footer_item_network">
             <a href="#"><img src="./img/icon/youtube.svg" alt="icon"></a>
             <a href="#"><img src="./img/icon/telegram.svg" alt="icon"></a>
             <a href="#"><img src="./img/icon//whatsapp.svg" alt="icon"></a>
+          </div>
+        </div>
+        <div class="footer_box_bootom js_footer_box">
+          <div class="footer_box_bootom_item">
+            <p>г. Краснодар</p>
+            <p>ул. Пригородная, 177, офис.401</p>
+            <a href="#">Связаться с нами</a>
+          </div>
+          <div class="footer_box_bootom_item">
+            <p>г. Севастополь</p>
+            <p>ул. Хрусталева, д. 74 А/1, оф.409</p>
+            <a href="#">Связаться с нами</a>
+          </div>
+          <div class="footer_box_bootom_item">
+            <p>г. Санкт-Петербург</p>
+            <p> ул. Михаила Дудина д. 11</p>
+            <a href="#">Связаться с нами</a>
+          </div>
+          <div class="footer_box_bootom_item">
+            <p>г. Краснодар</p>
+            <p> ул. Пригородная, 177, офис.401</p>
+            <a href="#">Связаться с нами</a>
+          </div>
+          <div class="footer_box_bootom_item">
+            <p>г. Севастополь</p>
+            <p>ул. Хрусталева, д. 74 А/1, оф.409</p>
+            <a href="#">Связаться с нами</a>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="footer_bottom">
+      <p>VIRMAK - Все права зашищены 2025</p>
+      <p>ООО «ВР МСК» ИНН/КПП 7743442428 / 774301001 ОГРН: 1247700165305</p>
+      <p>СОЗДАНИЕ САЙТ - DUOS DIGITAL STUDIO </p>
     </div>
   </footer>
 
