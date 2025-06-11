@@ -5,21 +5,42 @@ $('.main_slider').slick({
   speed: 700,
   slidesToShow: 1,
   adaptiveHeight: false,
-  autoplay:false,
+  autoplay: false,
 });
 $('.franchise_slider').slick({
   dots: false,
   infinite: true,
-  arrows: false,
+  prevArrow: $('.franchise_slider_nav_prev'),
+  nextArrow: $('.franchise_slider_nav_next'),
   speed: 700,
-  slidesToShow: 1,
+  slidesToShow: 3,
   adaptiveHeight: false,
   autoplay: false,
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+      }
+
+    },
+    {
+      breakpoint: 570,
+      settings: {
+        slidesToShow: 1,
+      }
+
+    }
+
+  ]
 });
+
+
 $('.uniqueness_box_mobile').slick({
   dots: false,
   infinite: true,
-  arrows: false,
+  prevArrow: $('.uniqueness_slider_nav_prev'),
+  nextArrow: $('.uniqueness_slider_nav_next'),
   speed: 700,
   slidesToShow: 1,
   adaptiveHeight: false,
@@ -41,14 +62,21 @@ $('.credit_box').slick({
       settings: {
         slidesToShow: 3,
       }
-      
+
     },
     {
       breakpoint: 1240,
       settings: {
+        slidesToShow: 2,
+      }
+
+    },
+    {
+      breakpoint: 710,
+      settings: {
         slidesToShow: 1,
       }
-      
+
     }
 
   ]
@@ -67,11 +95,62 @@ $('.stages_box_item_slider').slick({
 $('.options_box_mobile').slick({
   dots: false,
   infinite: true,
-  arrows: false,
+  prevArrow: $('.options_slider_nav_prev'),
+  nextArrow: $('.options_slider_nav_next'),
   speed: 700,
-  slidesToShow: 1,
+  slidesToShow: 2,
   adaptiveHeight: false,
   autoplay: false,
+  responsive: [
+    {
+      breakpoint: 670,
+      settings: {
+        slidesToShow: 1,
+      }
+
+    }
+  ]
+});
+
+$('.projects_box_mobile').slick({
+  dots: false,
+  infinite: true,
+  prevArrow: $('.projects_slider_nav_prev'),
+  nextArrow: $('.projects_slider_nav_next'),
+  speed: 700,
+  slidesToShow: 2,
+  adaptiveHeight: false,
+  autoplay: false,
+  responsive: [
+    {
+      breakpoint: 820,
+      settings: {
+        slidesToShow: 1,
+      }
+
+    }
+  ]
+});
+
+
+$('.hit_box_mobile').slick({
+  dots: false,
+  infinite: true,
+  prevArrow: $('.hit_slider_nav_prev'),
+  nextArrow: $('.hit_slider_nav_next'),
+  speed: 700,
+  slidesToShow: 2,
+  adaptiveHeight: false,
+  autoplay: false,
+  responsive: [
+    {
+      breakpoint: 820,
+      settings: {
+        slidesToShow: 1,
+      }
+
+    }
+  ]
 });
 
 $('.series_box_mobile').slick({
@@ -91,14 +170,21 @@ $('.video_slider').slick({
   speed: 700,
   slidesToShow: 3,
   adaptiveHeight: false,
-  autoplay: true,
+  autoplay: false,
   responsive: [
     {
       breakpoint: 1240,
       settings: {
+        slidesToShow: 2,
+      }
+
+    },
+    {
+      breakpoint: 700,
+      settings: {
         slidesToShow: 1,
       }
-      
+
     }
 
   ]
@@ -106,7 +192,8 @@ $('.video_slider').slick({
 
 
 $('.reviews_slider').slick({
-  dots: false,
+  dots: true,
+  appendDots: $('.reviews_dots'),
   infinite: true,
   arrows: false,
   speed: 700,

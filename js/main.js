@@ -96,14 +96,51 @@
     footerBtn.addEventListener('click', function () {
       footerBox.classList.toggle('active');
       footerWrap.classList.toggle('active');
-      if(footerBox.classList.contains('active')){
+      if (footerBox.classList.contains('active')) {
         footerBtn.innerHTML = '';
         footerBtn.innerHTML = 'СКРЫТЬ'
-      }else{
+      } else {
         footerBtn.innerHTML = '';
         footerBtn.innerHTML = 'НАШИ ОФИСЫ В РОССИИ'
       }
     })
+  }
+
+
+
+})();
+
+
+//input range
+(() => {
+
+  let ranges = document.querySelector('.range-input')
+  if(ranges){
+    ranges.addEventListener('input', handleInputRange)
+  }
+  
+  let ranges2 = document.querySelector('.range-input2')
+  if(ranges2){
+    ranges2.addEventListener('input', handleInputRange2)
+  }
+ 
+  let ranges3 = document.querySelector('.range-input3')
+  if(ranges3){
+    ranges3.addEventListener('input', handleInputRange3)
+  }
+  
+
+
+  function handleInputRange(e) {
+    e.target.nextElementSibling.innerHTML = 'ОТ' + ' ' + e.target.value + ' ' + 'М2';
+  }
+
+  function handleInputRange2(e) {
+    e.target.nextElementSibling.innerHTML = 'ОТ' + ' ' + e.target.value + ' ' + 'РУБ';
+  }
+
+  function handleInputRange3(e) {
+    e.target.nextElementSibling.innerHTML = 'ОТ' + ' ' + e.target.value + ' ' + 'Mлн.';
   }
 
 
