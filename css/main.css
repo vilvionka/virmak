@@ -19,6 +19,7 @@ html {
 body.noscroll {
   overflow-y: hidden;
 }
+
 .nav::-webkit-scrollbar {
   width: 0px;
 }
@@ -97,6 +98,34 @@ header {
   display: flex;
   align-items: center;
   gap: 23px;
+}
+.header_call_network a{
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .6s;
+  display: block;
+}
+
+.header_call_network a:nth-child(1){
+  background-image: url(../img/icon/youtube.svg);
+}
+.header_call_network a:nth-child(2){
+  background-image: url(../img/icon/telegram.svg);
+}
+.header_call_network a:nth-child(3){
+  background-image: url(../img/icon/whatsapp.svg);
+}
+.header_call_network a:nth-child(1):hover{
+  background-image: url(../img/icon/youtube_h.svg);
+}
+.header_call_network a:nth-child(2):hover{
+  background-image: url(../img/icon/telegram_h.svg);
+}
+.header_call_network a:nth-child(3):hover{
+  background-image: url(../img/icon/whatsapp_h.svg);
 }
 
 .header_right {
@@ -360,8 +389,7 @@ main .container {
   background: #334C1280;
 }
 
-.main_link_box_item.active::after,
-.main_link_box_item.active::before {
+.main_link_box_item.active::after {
   display: none;
 }
 
@@ -574,7 +602,7 @@ span.gcss_tittle i:last-child {
 .services_box {
   display: flex;
   justify-content: space-around;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .services_box_item {
@@ -651,13 +679,20 @@ span.gcss_tittle i:last-child {
   cursor: pointer;
 }
 
+.franchise_box_item--link:hover {
+  background-color: #768D45;
+}
+
 .franchise_box_item--link .franchise_box_item_prise,
-.franchise_box_item--link.franchise_box_item span, .franchise_box_item--link.franchise_box_item p {
+.franchise_box_item--link.franchise_box_item span,
+.franchise_box_item--link.franchise_box_item p {
   color: #fff;
 }
-.franchise_box_item--link .franchise_box_item_prise::after{
+
+.franchise_box_item--link .franchise_box_item_prise::after {
   display: none;
 }
+
 .franchise_box_item--link.franchise_box_item span::after {
   background-image: url(../img/icon/cell_white.svg);
 }
@@ -963,6 +998,8 @@ section.stages h2 {
   width: 100%;
   height: 440px;
   width: calc((100%/3) - 20px);
+  display: block;
+  cursor: zoom-in;
 }
 
 .uniqueness_box .uniqueness_box_item:nth-child(2) {
@@ -1135,6 +1172,10 @@ section.stages h2 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  transition: .6s;
+}
+.yandex_box_btn a:hover{
+  background-color: #768D45;
 }
 
 .reviews_slider_item {
@@ -1216,17 +1257,7 @@ section.stages h2 {
   color: #fff;
 }
 
-.reviews_slider_item_head a:last-child {
-  background: #768D45;
-  border: 0.5px solid #768D4580;
-  margin-bottom: 0px;
-}
 
-.reviews_slider_item_head a:last-child:hover {
-  background-color: #666;
-  border: 0.5px solid #57575780;
-  color: #fff;
-}
 
 .reviews_slider_item_body {
   border: 1px solid #00000080;
@@ -1410,6 +1441,28 @@ footer {
   width: 40px;
   height: 40px;
   display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .6s;
+}
+.footer_item_network a:nth-child(1){
+  background-image: url(../img/icon/youtube.svg);
+}
+.footer_item_network a:nth-child(2){
+  background-image: url(../img/icon/telegram.svg);
+}
+.footer_item_network a:nth-child(3){
+  background-image: url(../img/icon/whatsapp.svg);
+}
+.footer_item_network a:nth-child(1):hover{
+  background-image: url(../img/icon/youtube_h.svg);
+}
+.footer_item_network a:nth-child(2):hover{
+  background-image: url(../img/icon/telegram_h.svg);
+}
+.footer_item_network a:nth-child(3):hover{
+  background-image: url(../img/icon/whatsapp_h.svg);
 }
 
 .footer_item_network a:last-child {
@@ -1420,11 +1473,7 @@ footer {
   display: flex;
 }
 
-.footer_item_network a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 .hit_box {
   margin-top: 60px;
@@ -2102,6 +2151,8 @@ footer {
   height: 600px;
   border: 1px solid #575757;
   margin-top: 60px;
+  display: block;
+  cursor: zoom-in;
 }
 
 .layout_flex_item_img img {
@@ -2123,10 +2174,11 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .discription_house_box_flex_item {
-  width: calc(50% - 11px);
+  width:100%;
 }
 
 .discription_house_box_flex .discription_house_box_flex_item:nth-child(3) {
@@ -3102,10 +3154,11 @@ p.discription_house_box_flex_item_flex--price {
   width: 100%;
   max-width: 1870px;
   display: none;
-  overflow: scroll ;
+  overflow: scroll;
   max-height: calc(100svh - 138px);
 }
-.nav_wrap{
+
+.nav_wrap {
   height: 100%;
 }
 
@@ -3144,7 +3197,7 @@ p.discription_house_box_flex_item_flex--price {
 }
 
 .nav_box_item span {
-  font-family: 'Junge', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -3156,7 +3209,7 @@ p.discription_house_box_flex_item_flex--price {
 }
 
 .nav_box_item a {
-  font-family: 'Junge', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -3922,7 +3975,8 @@ p.discription_house_box_flex_item_flex--price {
 .business_money_wrap {
   display: none;
 }
-.nav_box_item_flex{
+
+.nav_box_item_flex {
   display: flex;
   gap: 20px 50px;
   flex-wrap: wrap;
@@ -4043,6 +4097,10 @@ p.discription_house_box_flex_item_flex--price {
   .map_number-flex_item p {
     font-size: 16px;
     line-height: 130%;
+  }
+
+  .video_slider_item_wrap_vid {
+    height: 260px;
   }
 
 }
@@ -4881,8 +4939,18 @@ p.discription_house_box_flex_item_flex--price {
     text-align: right;
     margin-left: 9%;
   }
+
   .franchise_box_item {
     height: 220px;
+  }
+  .services_box {
+    margin-top: 30px;
+}
+.about_box {
+  margin-top: 30px;
+}
+.video_slider {
+  margin-top: 30px;
 }
 
 }
@@ -5021,9 +5089,10 @@ p.discription_house_box_flex_item_flex--price {
   .business_advantage_box_item {
     width: 100%;
   }
+
   .franchise_box_item {
     height: 220px;
-}
+  }
 
 }
 
@@ -5587,9 +5656,10 @@ p.discription_house_box_flex_item_flex--price {
     padding: 20px 30px;
     height: 200px;
   }
+
   .franchise_box_item {
     height: 220px;
-}
+  }
 
 }
 
