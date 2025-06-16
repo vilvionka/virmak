@@ -44,6 +44,8 @@
   let popBoxO = document.querySelector('.js_pop_box_o');
   let btnC = document.querySelectorAll('.js_btn_c');
   let btnO = document.querySelectorAll('.js_btn_o');
+  let btnCf = document.querySelector('.js_btn_cf');
+  let tittle = document.querySelector('.js_pop_box_tittle')
 
 
   if (btnC) {
@@ -51,6 +53,8 @@
       btnC[i].addEventListener('click', function () {
         document.querySelector('body').classList.add('noscroll')
         popC.classList.add('active');
+        tittle.innerHTML = '';
+        tittle.innerHTML = 'ОБРАТНАЯ СВЯЗЬ'
       })
     }
   }
@@ -82,6 +86,15 @@
     })
   }
 
+  if (btnCf) {
+    btnCf.addEventListener('click', function () {
+      document.querySelector('body').classList.add('noscroll')
+      popC.classList.add('active');
+      tittle.innerHTML = '';
+      tittle.innerHTML = 'ЗАФИКСИРОВАТЬ СТОИМОСТЬ'
+    })
+  }
+
 })();
 
 //footer btn
@@ -106,8 +119,6 @@
     })
   }
 
-
-
 })();
 
 
@@ -115,20 +126,19 @@
 (() => {
 
   let ranges = document.querySelector('.range-input')
-  if(ranges){
+  if (ranges) {
     ranges.addEventListener('input', handleInputRange)
   }
-  
+
   let ranges2 = document.querySelector('.range-input2')
-  if(ranges2){
+  if (ranges2) {
     ranges2.addEventListener('input', handleInputRange2)
   }
- 
+
   let ranges3 = document.querySelector('.range-input3')
-  if(ranges3){
+  if (ranges3) {
     ranges3.addEventListener('input', handleInputRange3)
   }
-  
 
 
   function handleInputRange(e) {
@@ -143,6 +153,131 @@
     e.target.nextElementSibling.innerHTML = 'ОТ' + ' ' + e.target.value + ' ' + 'Mлн.';
   }
 
+})();
+
+
+//network btn animation
+(() => {
+  let networkBox = document.querySelector('.js_network_box');
+  let networkBtn = document.querySelector('.js_network_btn');
+
+
+  if (networkBtn) {
+
+    networkBtn.addEventListener('click', function () {
+      networkBox.classList.toggle('active');
+      this.classList.toggle('active')
+    })
+  }
+
+  document.addEventListener('click', (e) => {
+    const lkEl = e.composedPath().includes(networkBtn);
+    const gambLk = e.composedPath().includes(networkBox);
+    if (!lkEl && !gambLk) {
+      networkBox.classList.remove('active');
+      networkBtn.classList.remove('active');
+    }
+
+  })
+
+
+})();
+
+
+//network btn animation
+(() => {
+  let buttonBox = document.querySelector('.js-p-button-box');
+  let buttonBtn = document.querySelector('.js-p-button-btn');
+
+
+  if (buttonBtn) {
+
+    buttonBtn.addEventListener('click', function () {
+      buttonBox.classList.toggle('active');
+      this.classList.toggle('active')
+    })
+  }
+
+  document.addEventListener('click', (e) => {
+    const lkEl = e.composedPath().includes(buttonBtn);
+    const gambLk = e.composedPath().includes(buttonBox);
+    if (!lkEl && !gambLk) {
+      buttonBtn.classList.remove('active');
+      buttonBox.classList.remove('active');
+    }
+
+  })
+
+
+})();
+
+let pButton = document.querySelector('.js-p-button')
+window.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
+    pButton.classList.add('hidden');
+  } else {
+    pButton.classList.remove('hidden');
+  }
+});
+
+
+//options pop animation
+(() => {
+  let optionsBox = document.querySelector('.js_options_box');
+  let optionsBtn = document.querySelectorAll('.js_options_btn');
+  let optionsClose = document.querySelector('.js_options_close')
+
+
+  if (optionsBtn) {
+    for (let i = 0; i < optionsBtn.length; i++) {
+      optionsBtn[i].addEventListener('click', function () {
+        optionsBox.classList.add('active')
+      })
+    }
+  }
+
+  if (optionsClose) {
+    optionsClose.addEventListener('click', function () {
+      optionsBox.classList.remove('active')
+    })
+
+  }
+
+})();
+
+
+
+//options pop animation
+(() => {
+  let navBox = document.querySelector('.js_nav_box');
+  let navBtn = document.querySelector('.js_nav_btn');
+  let navClose = document.querySelector('.js_nav_close')
+
+  if (navBtn) {
+    navBtn.addEventListener('click', function (e) {
+      e.preventDefault;
+      e.stopPropagation;
+      navBox.classList.add('active');
+      document.querySelector('body').classList.add('noscroll')
+    })
+  }
+
+  if (navClose) {
+    navClose.addEventListener('click', function () {
+      navBox.classList.remove('active')
+      document.querySelector('body').classList.remove('noscroll')
+    })
+  }
+
+  document.addEventListener('click', (e) => {
+    const lkEl = e.composedPath().includes(navBtn);
+    const gambLk = e.composedPath().includes(navBox);
+    if (!lkEl && !gambLk) {
+      navBox.classList.remove('active');
+      document.querySelector('body').classList.remove('noscroll')
+    }
+
+  })
 
 
 })();
