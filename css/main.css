@@ -2324,6 +2324,10 @@ p.discription_house_box_flex_item_flex--price {
   width: 100%;
   margin-top: 30px;
 }
+.contact_box_item iframe{
+  width: 100%;
+  height: 100%;
+}
 
 .contact_box_wrap {
   width: calc(50% - 55px);
