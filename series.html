@@ -91,7 +91,12 @@
   </div>
 
   <div class="pop_up js_pop_c">
-    <div class="pop_up_connection js_pop_box_c">
+    <div class="pop_up_connection js_pop_box_c"> 
+      <div class="pop_up_close js_pop_up_close_c">
+        <svg width="22" height="22" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.60813 6.60732L18.3932 18.3924M18.3932 6.60732L6.60813 18.3924" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
       <div class="pop_up_connection_tittle js_pop_box_tittle">
         ОБРАТНАЯ СВЯЗЬ
       </div>
@@ -100,7 +105,15 @@
         <input type="tel" placeholder="+7 900 000 000" required class="pop_up_input">
         <input type="email" placeholder="E-mail" required class="pop_up_input">
         <input type="text" placeholder="Город" required class="pop_up_input">
-        <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#"> персональных данных</a>.</p>
+        <div class="personal-data">
+          <div class="personal-data_check">
+            <input type="checkbox" id="pop_c-check" required>
+            <label for="pop_c-check"></label>
+          </div>
+          <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#">персональных данных</a>, в
+            соответствии с Федеральным законом от 27.07.2006 года №152 ФЗ “О персональных данных”, на условиях и для
+            целей. определенных в согласии на обработку персональных данных</p>
+        </div>
         <input type="submit" value="ОТПРАВИТЬ" class="btn pop_up_btn">
       </form>
     </div>
@@ -108,6 +121,11 @@
 
   <div class="pop_up js_pop_o">
     <div class="pop_up_connection js_pop_box_o">
+      <div class="pop_up_close js_pop_up_close_o">
+        <svg width="22" height="22" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.60813 6.60732L18.3932 18.3924M18.3932 6.60732L6.60813 18.3924" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
       <div class="pop_up_connection_tittle">
         ЗАКАЗ УСЛУГИ
       </div>
@@ -117,7 +135,15 @@
         <input type="tel" placeholder="+7 900 000 000" required class="pop_up_input">
         <input type="email" placeholder="E-mail" required class="pop_up_input">
         <input type="text" placeholder="Город" required class="pop_up_input">
-        <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#"> персональных данных</a>.</p>
+        <div class="personal-data">
+          <div class="personal-data_check">
+            <input type="checkbox" id="pop_o-check" required>
+            <label for="pop_o-check"></label>
+          </div>
+          <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#">персональных данных</a>, в
+            соответствии с Федеральным законом от 27.07.2006 года №152 ФЗ “О персональных данных”, на условиях и для
+            целей. определенных в согласии на обработку персональных данных</p>
+        </div>
         <input type="submit" value="ОТПРАВИТЬ" class="btn pop_up_btn">
       </form>
     </div>
@@ -537,15 +563,22 @@
           <form action="#">
             <div class="form_box_form_title">ОБРАТНАЯ СВЯЗЬ</div>
             <div class="form_box_form_flex">
-              <input type="text" placeholder="Ваше Имя">
-              <input type="text" placeholder="E-mail">
+              <input type="text" placeholder="Ваше Имя" required>
+              <input type="text" placeholder="E-mail" required>
             </div>
             <div class="form_box_form_flex">
-              <input type="text" placeholder="+7 900 000 000">
+              <input type="text" placeholder="+7 900 000 000" required>
               <input type="text" placeholder="Город">
             </div>
-            <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#">персональных данных</a>.
-            </p>
+            <div class="personal-data">
+              <div class="personal-data_check">
+                <input type="checkbox" id="pop_f-check" required>
+                <label for="pop_f-check"></label>
+              </div>
+              <p>Нажимая на кнопку "Отправить", вы даете согласие на обработку своих <a href="#">персональных
+                  данных</a>, в соответствии с Федеральным законом от 27.07.2006 года №152 ФЗ “О персональных данных”,
+                на условиях и для целей. определенных в согласии на обработку персональных данных</p>
+            </div>
             <input type="submit" value="ОТПРАВИТЬ" class="btn form_box_form_btn">
           </form>
         </div>

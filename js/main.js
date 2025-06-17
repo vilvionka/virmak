@@ -46,6 +46,8 @@
   let btnO = document.querySelectorAll('.js_btn_o');
   let btnCf = document.querySelector('.js_btn_cf');
   let tittle = document.querySelector('.js_pop_box_tittle')
+  let close_c = document.querySelector('.js_pop_up_close_c')
+  let close_o = document.querySelector('.js_pop_up_close_o')
 
 
   if (btnC) {
@@ -68,21 +70,38 @@
     }
   }
 
+
   if (popC) {
     popC.addEventListener('click', function (e) {
-      if (e.target !== e.composedPath().includes(btnC)) {
+      const lkEl = e.composedPath().includes(popBoxC);
+      if (!lkEl) {
         popC.classList.remove('active');
         document.querySelector('body').classList.remove('noscroll')
       }
     })
   }
 
+  if (close_c) {
+    close_c.addEventListener('click', function (e) {
+        popC.classList.remove('active');
+        document.querySelector('body').classList.remove('noscroll')
+    })
+  }
+
   if (popO) {
     popO.addEventListener('click', function (e) {
-      if (e.target !== e.composedPath().includes(btnO)) {
+      const lkEl = e.composedPath().includes(popBoxO);
+      if (!lkEl) {
         popO.classList.remove('active');
         document.querySelector('body').classList.remove('noscroll')
       }
+    })
+  }
+
+  if (close_o) {
+    close_o.addEventListener('click', function (e) {
+        popO.classList.remove('active');
+        document.querySelector('body').classList.remove('noscroll')
     })
   }
 
