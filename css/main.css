@@ -4998,7 +4998,7 @@ a.nav_tittle {
 
   .four_foto,
   .video-small {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .video-small_box {
@@ -5624,10 +5624,9 @@ a.nav_tittle {
     margin-top: 20px;
   }
 
-  .four_foto,
-  .video-small {
-    display: none;
-  }
+  .four_foto_flex_item {
+  width: 100%;
+}
 
   .question_box {
     margin-top: 30px;
@@ -5815,7 +5814,6 @@ a.nav_tittle {
 
   .video-small_box_mobile {
     display: block;
-    margin-bottom: 150px !important;
   }
 
   .video-small_box {
