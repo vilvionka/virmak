@@ -626,7 +626,7 @@ span.gcss_tittle i:last-child {
   justify-content: center;
 }
 
-.services_box_item p {
+.services_box_item a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -637,6 +637,11 @@ span.gcss_tittle i:last-child {
   color: #000;
   max-width: 290px;
   width: 100%;
+  display: block;
+  transition: .6s;
+}
+.services_box_item a:hover{
+  color: #768D45;
 }
 
 .services_box_item_btn {
@@ -5464,7 +5469,7 @@ a.nav_tittle {
     width: 100%;
   }
 
-  .services_box_item p {
+  .services_box_item a {
     font-size: 16px;
     margin: 10px 0 20px 0;
   }
