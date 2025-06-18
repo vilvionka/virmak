@@ -323,7 +323,7 @@ header {
 }
 
 section {
-  margin-top: 160px;
+  margin-top: 80px;
 }
 
 section h2 {
@@ -846,7 +846,7 @@ span.gcss_tittle i:last-child {
 }
 
 section.stages {
-  margin-top: 160px;
+  margin-top: 80px;
 }
 
 section.stages h2 {
@@ -1121,7 +1121,7 @@ section.stages h2 {
 }
 
 .video_slider_item_wrap_vid {
-  height: 340px;
+  height: 226px;
   border: 1px solid #57575780;
   overflow: hidden;
 }
@@ -1135,7 +1135,7 @@ section.stages h2 {
 }
 
 .yandex {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .yandex_box {
@@ -1302,7 +1302,7 @@ footer .container {
 
 
 footer {
-  margin-top: 160px;
+  margin-top: 80px;
   padding: 0 30px;
 }
 
@@ -1631,7 +1631,7 @@ footer {
 }
 
 .form {
-  margin-top: 160px;
+  margin-top: 80px;
 }
 
 .form_box {
@@ -2051,7 +2051,7 @@ footer {
 
 .four_foto,
 .video-small {
-  margin-top: 160px;
+  margin-top: 80px;
 }
 
 .big_foto {
@@ -2069,7 +2069,7 @@ footer {
 }
 
 .video-small_item_wrap_vid {
-  height: 505px;
+  height: 458px;
   border: 1px solid #666666;
 }
 
@@ -2676,7 +2676,7 @@ p.discription_house_box_flex_item_flex--price {
 }
 
 .projects_filter {
-  margin-top: 120px;
+  margin-top: 90px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -3224,17 +3224,7 @@ p.discription_house_box_flex_item_flex--price {
   border: none;
 }
 
-.nav_box_item span {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: block;
-  color: #000;
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid #000000;
-  max-width: 126px;
-}
+
 
 .nav_box_item a {
   font-family: 'Inter', sans-serif;
@@ -3247,7 +3237,19 @@ p.discription_house_box_flex_item_flex--price {
   transition: .6s;
   position: relative;
 }
-
+.nav_box_item span, a.nav_tittle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  display: block;
+  color: #000;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #000000;
+  max-width: 126px;
+  display: block;
+  margin-top: 0px;
+}
 .nav_box_item a:hover {
   color: #2D7003;
 }
@@ -3544,7 +3546,7 @@ p.discription_house_box_flex_item_flex--price {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  height: 700px;
+  height: 666px;
 }
 
 .translation_box iframe {
@@ -3553,7 +3555,7 @@ p.discription_house_box_flex_item_flex--price {
 }
 
 .map_yandex {
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 .map_yandex_box {
@@ -3822,7 +3824,7 @@ p.discription_house_box_flex_item_flex--price {
 }
 
 .map_number {
-  margin-top: 160px;
+  margin-top: 80px;
   height: 650px;
   overflow: hidden;
   width: calc(100% - 40px);
@@ -4118,6 +4120,10 @@ p.discription_house_box_flex_item_flex--price {
 .pop_up_close:hover svg path {
   stroke: #000000dd;
 }
+.margin--main{
+  margin-top: 110px !important;
+}
+
 
 @media (max-width: 1870px) {
   .nav {
@@ -4237,8 +4243,11 @@ p.discription_house_box_flex_item_flex--price {
   }
 
   .video_slider_item_wrap_vid {
-    height: 260px;
+    height: 200px;
   }
+  .video-small_item_wrap_vid {
+    height: 408px;
+}
 
 }
 
@@ -4635,7 +4644,10 @@ p.discription_house_box_flex_item_flex--price {
   }
 
   section {
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+  .margin--main{
+    margin-top: 80px !important;
   }
 
   section.projects,
@@ -4788,7 +4800,7 @@ p.discription_house_box_flex_item_flex--price {
   }
 
   .form {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .form_box_text {
@@ -5047,7 +5059,7 @@ p.discription_house_box_flex_item_flex--price {
   }
 
   .map_number {
-    margin-top: 100px;
+    margin-top: 50px;
     height: 450px;
   }
 
@@ -5108,7 +5120,7 @@ p.discription_house_box_flex_item_flex--price {
   }
 
   footer {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .video_production h2 {
@@ -5117,6 +5129,7 @@ p.discription_house_box_flex_item_flex--price {
 
   .kemping_wrap {
     margin-top: 30px;
+    padding: 20px;
   }
   .slick-dots {
     bottom: -30px;
@@ -5143,7 +5156,7 @@ p.discription_house_box_flex_item_flex--price {
   margin-top: 30px;
 }
 section.stages {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .stages_box {
   margin-top: 10px;
@@ -5162,6 +5175,12 @@ section.stages {
 }
 .stages--main{
   margin-top: 130px;
+}
+.yandex {
+  margin-top: 80px;
+}
+.map_yandex {
+  margin-top: 50px;
 }
 
 }
@@ -5753,7 +5772,7 @@ section.stages {
   }
 
   .map_yandex {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .map_yandex_box {
@@ -6349,7 +6368,7 @@ section.stages {
   }
 
   section.stages {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   .options_box {
@@ -6784,17 +6803,23 @@ section.stages {
     height: 250px;
   }
   section {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .form {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .advantage_box {
   padding:0;
   border: none;
 }
 .margin--main{
-  margin-top: 100px !important;
+  margin-top: 70px !important;
+}
+.yandex {
+  margin-top: 70px;
+}
+.big_foto,.warning, .layout {
+  margin-top: 40px;
 }
 
 }
@@ -6891,6 +6916,9 @@ section.stages {
   .map_number-flex_item p {
     margin-top: 20px;
   }
+  .video_slider_item {
+    padding: 0;
+}
 }
 
 @media (max-width: 395px) {
@@ -6900,5 +6928,17 @@ section.stages {
     left: 10px;
     transform: translate(0%, -50%);
   }
+  .video_slider_item {
+    padding: 0 0px;
+}
+
+.video-small_item_wrap_vid {
+  height: 208px;
+}
+.translation_box {
+  height: 208px;
+}
+
+
   
 }
