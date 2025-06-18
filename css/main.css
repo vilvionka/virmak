@@ -5183,6 +5183,9 @@ section.stages {
 .map_yandex {
   margin-top: 50px;
 }
+.kemping_subtittle {
+  margin-bottom: 50px;
+}
 
 }
 
@@ -6821,6 +6824,9 @@ section.stages {
 }
 .big_foto,.warning, .layout {
   margin-top: 40px;
+}
+.kemping_subtittle {
+  margin-bottom: 30px;
 }
 
 }
