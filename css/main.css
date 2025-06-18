@@ -2046,7 +2046,7 @@ footer {
 }
 
 .question_box_item_body span:nth-child(1) {
-  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .four_foto_flex {
@@ -2244,6 +2244,10 @@ footer {
   font-size: 20px;
   line-height: 32px;
   color: #000;
+}
+.discription_house_box_flex_item p.bold {
+  font-weight: 700;
+  color: #575757;
 }
 
 .discription_house_box_flex_item_flex {
@@ -3666,7 +3670,7 @@ a.nav_tittle {
   font-size: 18px;
   line-height: 32px;
   color: #000;
-  max-width: 1000px;
+  max-width: initial !important;
   width: 100%;
   margin-bottom: 60px;
   text-align: justify;
