@@ -282,10 +282,9 @@ $(function () {
 
 
 $('.js_production9').slick({
-  dots: false,
+  dots: true,
   infinite: true,
-  prevArrow: $('.production_slider_nav_prev9'),
-  nextArrow: $('.production_slider_nav_next9'),
+  arrows: false,
   speed: 700,
   slidesToShow: 3,
   adaptiveHeight: false,

@@ -161,7 +161,7 @@
 
 
   function handleInputRange(e) {
-    e.target.nextElementSibling.innerHTML = 'ОТ' + ' ' + e.target.value + ' ' + 'М2';
+    e.target.nextElementSibling.innerHTML = 'ОТ' + ' ' + e.target.value + ' ' + 'М<sup>2</sup>';
   }
 
   function handleInputRange2(e) {
