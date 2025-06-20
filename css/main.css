@@ -1514,6 +1514,8 @@ footer {
   height: 600px;
   overflow: hidden;
   position: relative;
+  display: block;
+  cursor: zoom-in;
 }
 
 .hit_box_item_img img {
