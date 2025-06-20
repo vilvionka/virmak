@@ -640,7 +640,8 @@ span.gcss_tittle i:last-child {
   display: block;
   transition: .6s;
 }
-.services_box_item a:hover{
+
+.services_box_item a:hover {
   color: #768D45;
 }
 
@@ -2247,6 +2248,7 @@ footer {
   line-height: 32px;
   color: #000;
 }
+
 .discription_house_box_flex_item p.bold {
   font-weight: 700;
   color: #575757;
@@ -3088,7 +3090,7 @@ p.discription_house_box_flex_item_flex--price {
   font-size: 16px;
   line-height: 26px;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .pop_project_subtittle b {
@@ -3186,7 +3188,7 @@ p.discription_house_box_flex_item_flex--price {
   height: 58px;
   background-color: #666;
   border: 0.5px solid #66666680;
-  margin-top: 30px;
+  margin-top: 0px;
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -3677,7 +3679,8 @@ a.nav_tittle {
   margin-bottom: 60px;
   text-align: justify;
 }
-.kemping_box_slider_item{
+
+.kemping_box_slider_item {
   display: block;
   cursor: zoom-in;
 }
@@ -4175,6 +4178,13 @@ a.nav_tittle {
   margin-top: 20px;
 }
 
+.pop_project_flex-subtittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 
 @media (max-width: 1870px) {
   .nav {
@@ -4552,9 +4562,10 @@ a.nav_tittle {
   .stages_box .stages_box_item:nth-child(5) {
     margin-bottom: 50px;
   }
+
   .portfolio_box_item_tittle {
     font-size: 20px;
-}
+  }
 }
 
 @media (max-width: 1300px) {
@@ -4565,9 +4576,10 @@ a.nav_tittle {
   .translation_box {
     height: 500px;
   }
+
   .portfolio--color .portfolio_box_item {
     padding: 40px 20px;
-}
+  }
 
 }
 
@@ -5264,13 +5276,15 @@ a.nav_tittle {
   .kemping_subtittle {
     margin-bottom: 50px;
   }
+
   .portfolio_subtittle {
     font-size: 20px;
     line-height: 26px;
   }
+
   .portfolio_box_item_tittle {
     font-size: 18px;
-}
+  }
 
 }
 
@@ -5627,8 +5641,8 @@ a.nav_tittle {
   }
 
   .four_foto_flex_item {
-  width: 100%;
-}
+    width: 100%;
+  }
 
   .question_box {
     margin-top: 30px;
@@ -6109,9 +6123,10 @@ a.nav_tittle {
   .projects_box--main .projects_box_item_img {
     height: 350px;
   }
+
   .portfolio_box_item_tittle {
     font-size: 16px;
-}
+  }
 }
 
 
@@ -6703,9 +6718,11 @@ a.nav_tittle {
     width: 100%;
   }
 
-  .pop_project_box_disc_flex_btn {
-    margin-left: auto;
-    margin-right: auto;
+  .pop_project_flex-subtittle {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
 
   .pop_project_box_disc_flex_box_item_tittle {
@@ -6924,13 +6941,15 @@ a.nav_tittle {
   .kemping_subtittle {
     margin-bottom: 30px;
   }
+
   .portfolio_subtittle {
     font-size: 20px;
     line-height: 26px;
   }
+
   .portfolio_box_wrap {
     padding: 5px 0px;
-}
+  }
 
 }
 
